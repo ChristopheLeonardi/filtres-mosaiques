@@ -1,4 +1,9 @@
-/* Génération des filtres des mosaïques Christophe 20/05/2022 */
+/* Génération des filtres des mosaïques Christophe 20/05/2022 
+
+Lien et documentation : 
+https://github.com/ChristopheLeonardi/filtres-mosaiques
+
+*/
 
 /* ----------------------------------------------------------------
 1. Mise en place 
