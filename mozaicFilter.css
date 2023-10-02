@@ -1,0 +1,140 @@
+.filterContainer.Slider {
+    padding: 0 0 0 40px;
+}
+
+.filterContainer button:not(.btn) {
+    background: transparent;
+    border: unset;
+    padding: 0;
+}
+
+
+/* 
+.filterContainer>* {
+    width: 150px;
+} */
+
+.filterContainer select {
+    border-color: #ccc;
+    border-radius: 6px;
+}
+
+
+/* Filter Grid */
+
+[id^=zone-]>.filter-container {
+    border-bottom: 1px solid var(--medium-grey);
+}
+
+.filterContainer>* {
+    padding-bottom: 2em;
+}
+
+.filter.x-col>p,
+.filterContainer label {
+    text-transform: uppercase;
+}
+
+.filterContainer label {
+    font-weight: normal;
+    width: 200px;
+    line-height: 1.25;
+}
+
+.filterContainer select {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+
+/* .filter.x-col {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1%;
+}
+
+.filter.x-col>* {
+    margin: 0 2vw 0 0;
+    width: fit-content;
+} */
+
+.filterContainer .custom-select {
+    margin: 0;
+    position: relative;
+    /*     padding: 0 2em 0 1em;
+ */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: visible;
+}
+
+
+/* .filterContainer .custom-select:hover {
+    border-bottom: 2px solid var(--philharmonie-primary-color);
+}
+ */
+
+.custom-select select {
+    display: none;
+}
+
+
+/* Hide the items when the select box is closed: */
+
+.select-hide {
+    display: none;
+}
+
+.select-selected {
+    font-family: var(--paragraph-font);
+    color: var(--philharmonie-primary-color);
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.select-selected::after {
+    position: absolute;
+    content: url(/ui/skins/MEDIA/refonte-pad/img/chevron-up.svg);
+    width: 21px;
+    height: 10px;
+    left: calc(100% - 50px);
+    transition: 0.2s ease transform;
+}
+
+.select-arrow-active::after {
+    transform: rotate(180deg);
+    transition: 0.2s ease transform;
+    transform-origin: bottom;
+}
+
+.select-items {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 1em 31px 1em 1em;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0px 3px 3px 2px rgb(0 0 0 / 50%);
+    right: 20px;
+    top: 115px;
+}
+
+.select-items button {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.select-items button:hover {
+    font-weight: bold;
+}
+
+.select-items button:not(.btn) {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 0.5em 0;
+}
